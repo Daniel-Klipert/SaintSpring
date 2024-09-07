@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    font-weight: 400;
+    color: black;
+}
+
+body {
+    background-image: url(img/waterbackground.png);
+    background-size: contain;
+
+}
+
+header {
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    border-bottom: 15px solid #007eed;
+}
+
+header .col1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.point {
+    width: 20px;
+    position: relative;
+}
+
+.point a {
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+
+
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    margin: auto;
+}
+.point a:hover{
+    animation: rotatebtn 1s ease-in-out;
+    border: #007eed solid 2px;
+    border-radius: 15px;
+    background-color: #d0d0d0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header .col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+
+}
+
+header img {
+    height: 90%;
+}
+
+.sec1 {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item1,
+.item2 {
+    width: 40%;
+    background-color: #fff;
+    height: 400px;
+    min-width: 400px;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #007eed;
+    border-radius: 0 50% 0 50%;
+    padding: 20px;
+}
+
+.item1 h3 {
+    width: 80%;
+    font-size: 40px;
+
+}
+
+.item1 a {
+    background-color: #007eed;
+    padding: 30px;
+    border-radius: 40px;
+    align-self: end;
+
+}
+.item1 a:hover{
+    animation: scalebtn 0.3s ease-in-out forwards;
+}
+
+.item1 h2 {
+    color: #fff;
+    font-family: "Rubik";
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #007eed;
+    border-radius: 50% 0 50% 0;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.bottle {
+    height: 90%;
+
+}
+
+.sec2 {
+    padding: 100px;
+    margin-top: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    gap: 100px;
+}
+
+.griditem1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #fff;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: #007eed 5px solid;
+    padding: 10px;
+}
+
+.pc {
+    background-color: #007eed;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+}
+.griditem2{
+    display: flex;
+}
+.griditem2 img {
+   width: 100%;
+   
+}
+
+.griditem3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background-color: #fff;
+
+    grid-column-start: 2;
+    border: #007eed 5px solid;
+
+}
+
+.griditem3 h1 {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.griditem4 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(img/waterspring.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: #007eed 5px solid;
+
+}
+
+.griditem4 h2 {
+    color: #fff;
+    font-family: "Rubik";
+
+    font-weight: 900;
+    font-size: 200px;
+
+}
+
+.griditem5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background-color: #fff;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: #007eed 5px solid;
+}
+
+.griditem5 p {
+    font-weight: 900;
+    font-size: xx-large;
+
+}
+
+.sec3 {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 a {
+    padding: 20px;
+    border: #007eed solid 5px;
+    border-radius: 50px;
+    background: #ffffff;
+
+}
+
+.sec3 a h2 {
+    color: rgba(0, 0, 0, 0);
+    background-image: url(img/watertext.jpg);
+    background-clip: text;
+    font-family: "Rubik";
+    font-weight: 900;
+    font-size: 100px;
+
+}
+.sec3 a:hover{
+    animation: scalebtn 0.3s ease-in-out forwards;
+}
+
+footer {
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+    padding: 3px;
+    border-top: 15px solid #007eed;
+}
+
+footer img {
+    height: 90%;
+}
+
+footer p {
+    font-size: small;
+
+}
+
+footer a {
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+
+
+    
+    
+   
+}
+footer a:hover{
+    border: #007eed solid 2px;
+    border-radius: 15px;
+    background-color: #d0d0d0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer a h3 {
+    font-weight: bold
+}
+@keyframes rotatebtn{
+    from{
+    transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+
+    }
+    75%{
+transform: rotate(20deg);
+    }
+
+    to{
+    transform: rotate(0deg);
+    }
+}
+@keyframes scalebtn{
+    from{}
+    to{
+        transform: scale(1.3);
+    }
+}
+@media screen and (max-width:1200px) {
+    .sec2 {
+        padding: 40px;
+    }
+
+    .item1 h3 {
+        font-size: 30px;
+    }
+
+    .sec2 {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .grid {
+        width: 90%;
+        gap: 40px;
+    }
+    .griditem3 {
+        padding: 20px;
+    }
+
+    .griditem4 h2 {
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    header{
+        height: 20vh;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header .col2{
+        
+        height: 50%;
+
+      
+    }
+    header .col1{
+        width: 100%;
+        height: 50%;
+      
+    }
+
+    .sec1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item1,
+    .item2 {
+        margin: 40px;
+        width: 60%;
+    }
+
+    .griditem1 {
+        padding: 20px;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .griditem4 h2{
+        font-size: 110px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .griditem2{
+        display: none;
+    }
+    .griditem4 h2 {
+        font-size: 110px;
+    }
+    .griditem5{
+        padding: 25px;
+    }
+    .grid {
+        grid-template-rows: 3fr 1fr 1fr 2fr ;
+        grid-template-columns: 1fr;
+        gap: 0;
+        row-gap: 30px;
+
+
+    }
+
+}
+
+@media screen and (max-width:570px) {
+
+    .item1,
+    .item2{
+        width: 80%;
+        
+        min-width: 300px;
+    }
+    .griditem1 {
+    }
+
+    .griditem2 {
+
+
+    }
+
+    .griditem3 {
+    }
+
+    .griditem4 {
+    }
+
+    .griditem4 h2 {
+        font-size: 70px;
+    }
+
+    .griditem5 {
+        
+    }
+
+    .sec3 a h2 {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width:450px) {
+    .item1 h2{
+        font-size: 40px;
+    } 
+    .griditem4 h2 {
+        font-size: 50px;
+    }
+
+    .sec3 a h2{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:360px) {
+    
+    .item1,
+    .item2{
+        width: 80%;
+        
+        min-width: 200px;
+        height: 300px;
+    }
+    .item1 h3{
+        font-size: 20px;
+    }
+    .sec3 a h2{
+        font-size: 45px;
+    }
+
+}
